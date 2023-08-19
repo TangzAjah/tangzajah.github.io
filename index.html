@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fantasy&display=swap" rel="stylesheet">
+  <style>
+    .shadow-3d {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .font-fantasy {
+      font-family: 'Fantasy', cursive;
+    }
+
+    .fixed-navbar {
+      position: sticky;
+      top: 0;
+      background-color: white;
+      z-index: 1000;
+    }
+  </style>
+  <title>Your Website</title>
+</head>
+<body class="flex flex-col min-h-screen">
+  <nav class="bg-white py-4 px-6 shadow-3d fixed-navbar">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center">
+        <p class="text-xl font-semibold">TangzAjlh</p>
+        <div class="ml-6 hidden md:block">
+          <input type="text" placeholder="Search..." class="border rounded py-1 px-2">
+        </div>
+      </div>
+      <div class="md:hidden">
+        <button id="burgerBtn" class="text-2xl">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden mt-2">
+      <a href="#" class="block py-2 px-4 hover:bg-gray-200">Home</a>
+      <a href="#" class="block py-2 px-4 hover:bg-gray-200">Contact</a>
+      <div class="relative">
+        <button class="block py-2 px-4 hover:bg-gray-200">My Profile <i class="fas fa-angle-down ml-1"></i></button>
+        <div class="absolute hidden md:block bg-white py-2 px-4 mt-2 shadow-md">
+          <a href="#" class="block py-1">About me</a>
+          <a href="#" class="block py-1">My Hobby</a>
+          <a href="#" class="block py-1">My Skill</a>
+          <a href="#" class="block py-1">Portfolio</a>
+          <a href="#" class="block py-1">My Fav Music</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="text-center py-12">
+    <img src="path/to/tangz.jpg" alt="Profile Picture" class="w-32 h-32 rounded-full mx-auto mb-4">
+    <h1 class="text-4xl font-fantasy">Welcome to my website</h1>
+  </header>
+
+  <main class="flex-grow py-8 px-6">
+    <section class="mb-8">
+      <div class="border rounded p-4">
+        <h2 class="text-2xl font-semibold mb-4"><i class="fas fa-user mr-2"></i>About me</h2>
+        <p><i class="fas fa-user-circle mr-2"></i>Nama: TangzAjlh</p>
+        <p><i class="fas fa-birthday-cake mr-2"></i>Umur: -</p>
+        <p><i class="fas fa-map-marker-alt mr-2"></i>Alamat: -</p>
+        <p><i class="fas fa-hiking mr-2"></i>Email :</p>
+        <p>Republikwakanda777@gmail.com</p>
+      </div>
+    </section>
+    <section class="mb-8">
+      <div class="border rounded p-4">
+        <h2 class="text-2xl font-semibold mb-4"><i class="fas fa-laptop-code mr-2"></i>My Hobby</h2>
+        <p><i class="fas fa-code mr-2"></i>Coding</p>
+        <p><i class="fas fa-paint-brush mr-2"></i>Design</p>
+      </div>
+    </section>
+    <section class="mb-8">
+      <div class="border rounded p-4">
+        <h2 class="text-2xl font-semibold mb-4"><i class="fas fa-music mr-2"></i>My Fav Music</h2>
+        <div class="flex items-center">
+          <img src="path/to/rapsodi.jpg" alt="Favorite Music" class="w-16 h-16">
+          <audio controls class="ml-4">
+            <source src="audio/rapsodi.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+    </section>
+    <section class="mb-8">
+      <div class="border rounded p-4">
+        <h2 class="text-2xl font-semibold mb-4"><i class="fas fa-film mr-2"></i>My Fav Anime</h2>
+        <div class="flex flex-col items-center mb-2">
+          <img src="path/to/anime.jpg" alt="Favorite Anime" class="w-16 h-16">
+          <h3 class="text-lg font-semibold mt-2">Otonari no Tenshi-sama</h3>
+        </div>
+        <p>Genre : Romance,School,dll</p>
+        <p>Rating :</p>
+        <p class="text-yellow-400">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </p>
+        <p>Note : Nyiksa batin cuy..</p>
+      </div>
+    </section>
+    <section class="mb-8">
+      <div class="border rounded p-4">
+        <h2 class="text-2xl font-semibold mb-4"><i class="fas fa-lightbulb mr-2"></i>My Inspiration</h2>
+        <div class="flex flex-col items-center mb-2">
+          <img src="path/to/windah.jpg" alt="Inspiration" class="w-16 h-16">
+          <h3 class="text-lg font-semibold mt-2">Windah Basudara</h3>
+        </div>
+        <p>Aku bocil kematian</p>
+      </div>
+    </section>
+    <section class="mb-8">
+      <div class="border rounded p-4">
+        <h2 class="text-2xl font-semibold mb-4"><i class="fas fa-share-alt mr-2"></i>Media Social</h2>
+        <div class="flex items-center">
+          <div class="mr-8 mb-4 md:mb-0">
+            <a href="https://wa.me/6285742489245">
+              <img src="path/to/whatsapp.jpg" alt="WhatsApp" class="w-16 h-16">
+            </a>
+            <p class="text-center mt-2">WhatsApp</p>
+          </div>
+          <div class="mr-8 mb-4 md:mb-0">
+            <a href="https://t.me/Tangzajlh28">
+              <img src="path/to/telegram.jpg" alt="Telegram" class="w-16 h-16">
+            </a>
+            <p class="text-center mt-2">Telegram</p>
+          </div>
+          <div class="mr-8 mb-4 md:mb-0">
+            <a href="https:github.com/tangzajah">
+              <img src="path/to/github.jpg" alt="GitHub" class="w-16 h-16">
+            </a>
+            <p class="text-center mt-2">GitHub</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white py-4 px-6 text-center">
+    <p>&copy; 2023 TangzAjlh. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("burgerBtn").addEventListener("click", function() {
+      document.getElementById("mobileMenu").classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
